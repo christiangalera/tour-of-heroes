@@ -1,0 +1,10 @@
+{
+  "editor.stickyTabStops": false,
+  "editor.tabFocusMode": false,
+  "editor.useTabStops": true,
+  "workbench.editor.highlightModifiedTabs": false,
+  "workbench.editor.showTabs": true,
+  "workbench.editor.tabSizing": "fit",
+  "workbench.editor.titleScrollbarSizing": "default",
+  "workbench.editor.wrapTabs": true
+}
