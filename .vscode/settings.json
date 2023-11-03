@@ -6,5 +6,5 @@
   "workbench.editor.showTabs": "multiple",
   "workbench.editor.tabSizing": "fit",
   "workbench.editor.titleScrollbarSizing": "default",
-  "workbench.editor.wrapTabs": true
+  "workbench.editor.wrapTabs": false
 }
