@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { FormsModule } from '@angular/forms';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
-import { CardModule } from 'primeng/card';
+import { ToolbarModule } from 'primeng/toolbar';
 
 @NgModule({
   declarations: [
@@ -18,7 +18,7 @@ import { CardModule } from 'primeng/card';
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
-    CardModule
+    ToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
