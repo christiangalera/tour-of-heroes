@@ -7,12 +7,14 @@ import { HeroesComponent } from './heroes/heroes.component';
 import { FormsModule } from '@angular/forms';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { ToolbarModule } from 'primeng/toolbar';
+import { MesssagesComponent } from './messsages/messsages.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeroesComponent,
-    HeroDetailComponent
+    HeroDetailComponent,
+    MesssagesComponent
   ],
   imports: [
     BrowserModule,
