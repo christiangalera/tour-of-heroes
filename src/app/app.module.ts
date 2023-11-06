@@ -8,6 +8,9 @@ import { FormsModule } from '@angular/forms';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { ToolbarModule } from 'primeng/toolbar';
 import { MesssagesComponent } from './messsages/messsages.component';
+import { ButtonModule } from 'primeng/button';
+import { AccordionModule } from 'primeng/accordion';
+  
 
 @NgModule({
   declarations: [
@@ -20,7 +23,9 @@ import { MesssagesComponent } from './messsages/messsages.component';
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
-    ToolbarModule
+    ToolbarModule,
+    ButtonModule,
+    AccordionModule
   ],
   providers: [],
   bootstrap: [AppComponent]
