@@ -2,7 +2,7 @@
     <p-accordionTab header="Messages">
 
       <div class="btn">
-        <p-button label="Clear All Messages" badge={{messageService.getMessages().length}} [raised]="true" severity="warning" badgeClass="p-badge-danger" (click)="messageService.clear()"></p-button>
+        <p-button label="Clear All Messages" badge={{messageService.getMessages().length}} [raised]="true" severity="warning" badgeClass="p-badge-danger" [rounded]="false" (click)="messageService.clear()"></p-button>
       </div>
 
       

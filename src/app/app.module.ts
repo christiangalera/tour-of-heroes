@@ -7,9 +7,12 @@ import { HeroesComponent } from './heroes/heroes.component';
 import { FormsModule } from '@angular/forms';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { ToolbarModule } from 'primeng/toolbar';
-import { MesssagesComponent } from './messsages/messsages.component';
 import { ButtonModule } from 'primeng/button';
 import { AccordionModule } from 'primeng/accordion';
+import { AppRoutingModule } from './app-routing.module';
+import { MessagesComponent } from './messages/messages.component'; 
+import { TooltipModule } from 'primeng/tooltip';
+
   
 
 @NgModule({
@@ -17,7 +20,7 @@ import { AccordionModule } from 'primeng/accordion';
     AppComponent,
     HeroesComponent,
     HeroDetailComponent,
-    MesssagesComponent
+    MessagesComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +28,9 @@ import { AccordionModule } from 'primeng/accordion';
     FormsModule,
     ToolbarModule,
     ButtonModule,
-    AccordionModule
+    AccordionModule,
+    AppRoutingModule,
+    TooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]

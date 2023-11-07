@@ -1,10 +1,15 @@
 <p-toolbar  [style]="{'background-color': '#1565C0', 'color': 'white', 'padding': '12px', 'padding-left': '20px', 'border': 'none', 'border-radius': '0px'}">
   <h1>{{ title }}</h1>
+  <ng-template pTemplate="end" pTemplate="end">
+  <p-button routerLink="/heroes" pTooltip="Show your heroes" label="Heroes" icon="pi pi-star-fill" [raised]="true" [rounded]="true" class="mr-5"></p-button>
+
+  
+</ng-template>
 </p-toolbar>
 
 <div class="content">
-  <app-heroes></app-heroes>
-  <app-messsages></app-messsages>  
+  <router-outlet></router-outlet>
+  <app-messages></app-messages>  
 </div>
 
  
