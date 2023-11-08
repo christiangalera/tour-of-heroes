@@ -12,6 +12,10 @@ import { AccordionModule } from 'primeng/accordion';
 import { AppRoutingModule } from './app-routing.module';
 import { MessagesComponent } from './messages/messages.component'; 
 import { TooltipModule } from 'primeng/tooltip';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { CardModule } from 'primeng/card';
+import { FlexLayoutModule } from '@angular/flex-layout';
+
 
   
 
@@ -20,7 +24,8 @@ import { TooltipModule } from 'primeng/tooltip';
     AppComponent,
     HeroesComponent,
     HeroDetailComponent,
-    MessagesComponent
+    MessagesComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +35,9 @@ import { TooltipModule } from 'primeng/tooltip';
     ButtonModule,
     AccordionModule,
     AppRoutingModule,
-    TooltipModule
+    TooltipModule,
+    CardModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,13 @@
+<h2 fxLayoutAlign="center"
+ [style]="{ fontSize: '32px', fontWeight: 'bold' }">Dashboard</h2>
+
+<div
+fxLayout 
+fxLayoutGap="12px" 
+fxLayoutAlign="space-between"
+fxLayout.xs="column"
+>
+  <p-card *ngFor="let hero of heroes" [style]="{ fontSize: '26px', fontWeight: 'bold', paddingLeft: '30px', paddingRight: '30px', textAlign: 'center' }">
+    {{hero.name}}
+  </p-card>
+</div>
