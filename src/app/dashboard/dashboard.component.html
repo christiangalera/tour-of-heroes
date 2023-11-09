@@ -1,5 +1,5 @@
-<h2 fxLayoutAlign="center"
- [style]="{ fontSize: '32px', fontWeight: 'bold' }">Dashboard</h2>
+<h1 fxLayoutAlign="center"
+ [style]="{ fontSize: '32px', fontWeight: 'bold' }">Dashboard</h1>
 
 <div
 fxLayout 
@@ -7,7 +7,9 @@ fxLayoutGap="12px"
 fxLayoutAlign="space-between"
 fxLayout.xs="column"
 >
-  <p-card *ngFor="let hero of heroes" [style]="{ fontSize: '26px', fontWeight: 'bold', paddingLeft: '30px', paddingRight: '30px', textAlign: 'center' }">
+  <p-card *ngFor="let hero of heroes" routerLink="/heroes/{{hero.id}}"
+  [style]="{ fontSize: '20px', marginTop: '20px', fontWeight: 'bold', 
+  paddingLeft: '40px', paddingRight: '40px', textAlign: 'center', cursor: 'pointer' }">
     {{hero.name}}
   </p-card>
 </div>
