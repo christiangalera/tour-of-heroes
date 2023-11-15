@@ -5,8 +5,6 @@
         <p-button label="Clear All Messages" badge={{messageService.getMessages().length}} [raised]="true" severity="warning" badgeClass="p-badge-danger" [rounded]="false" (click)="messageService.clear()"></p-button>
       </div>
 
-      
-
       <div class="msg" *ngFor="let message of messageService.getMessages()">
         {{message}}
       </div>

@@ -15,6 +15,9 @@ import { TooltipModule } from 'primeng/tooltip';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { CardModule } from 'primeng/card';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { InputTextModule } from 'primeng/inputtext';
+import { TableModule } from 'primeng/table';
+
 
 
   
@@ -37,7 +40,9 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     AppRoutingModule,
     TooltipModule,
     CardModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    InputTextModule,
+    TableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

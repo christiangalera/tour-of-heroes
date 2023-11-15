@@ -1,5 +1,20 @@
-.heroes {
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.tabela-custom-header {
+  background-color: #eaeaea;
+}
+
+.tabela-custom-body {
+  background-color: #f3f3f3;
   cursor: pointer;
+  transition: .3s ease-out;
+}
+
+.tabela-custom-body:hover {
+  background-color: #e9e9e9;
 }
 
 

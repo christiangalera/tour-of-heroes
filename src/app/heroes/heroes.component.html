@@ -1,8 +1,18 @@
 <h1>My Heroes</h1>
+  
+<p-table [value]="heroes"  [tableStyle]="{ 'min-width': '40rem'}">
+  <ng-template pTemplate="header" >
+      <tr >
+          <th class="tabela-custom-header">Id</th>
+          <th class="tabela-custom-header">Hero Name</th>
+      </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-hero>
+      <tr class="tabela-custom-body" routerLink="/heroes/{{ hero.id }}">
+          <td>{{ hero.id }}</td>
+          <td>{{ hero.name }}</td>
+      </tr>
+  </ng-template>
+</p-table>
 
-<ul class="heroes">
-  <li *ngFor="let hero of heroes" 
-  routerLink="/heroes/{{ hero.id }}">
-    <span>{{ hero.id }}</span> {{ hero.name }}
-  </li>
-</ul>
+
