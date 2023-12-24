@@ -7,18 +7,15 @@ import { HeroesComponent } from './heroes/heroes.component';
 import { FormsModule } from '@angular/forms';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { AppRoutingModule } from './app-routing.module';
-import { MessagesComponent } from './messages/messages.component'; 
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { FlexLayoutModule } from '@angular/flex-layout';
-import { PrimengModule } from './primeng/primeng.module';
+import { CoreModule } from './core/core.module';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeroesComponent,
-    HeroDetailComponent,
-    MessagesComponent,
+    HeroDetailComponent, 
     DashboardComponent
   ],
   imports: [
@@ -26,8 +23,7 @@ import { PrimengModule } from './primeng/primeng.module';
     BrowserAnimationsModule,
     FormsModule,
     AppRoutingModule,
-    FlexLayoutModule,
-    PrimengModule
+    CoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]

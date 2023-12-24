@@ -1,0 +1,34 @@
+<p-toolbar  [style]="{'background-color': '#1565C0', 'color': 'white', 'padding': '12px', 'padding-left': '20px', 'border': 'none', 'border-radius': '0px'}">
+  <h1>{{ title }}</h1>
+  <ng-template pTemplate="end" pTemplate="end">
+
+  <p-button 
+  *ngFor="let menuItem of menuItems"
+
+  [routerLink]="menuItem.routerLink" 
+  [pTooltip]="menuItem.toolTipText" 
+  [label]="menuItem.toolTipText" 
+  tooltipPosition="left" 
+  [icon]="menuItem.icon"
+  [severity]="menuItem.severity"
+  [raised]="true" 
+  [rounded]="true" 
+  class="mr-3"></p-button>
+  <!-- icon pi pi-star-fill -->
+  <!-- router /heroes -->
+  <!-- Show your heroes -->
+
+  <!-- <p-button 
+  routerLink="/dashboard" 
+  pTooltip="Show dashboard" 
+  label="Dashboard" 
+  tooltipPosition="left" 
+  icon="pi pi-map"
+  severity="warning" 
+  [raised]="true" 
+  [rounded]="true" 
+  class="mr-4"></p-button> -->
+
+  
+</ng-template>
+</p-toolbar>

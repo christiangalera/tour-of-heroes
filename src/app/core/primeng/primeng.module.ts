@@ -18,9 +18,7 @@ const MODULES = [
 ]
 
 @NgModule({
-  imports: [
-    MODULES
-  ],
+  imports: [MODULES],
   exports: [MODULES]
 })
 export class PrimengModule { }

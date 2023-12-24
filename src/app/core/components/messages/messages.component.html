@@ -1,0 +1,27 @@
+  <!-- <p-accordion >
+    <p-accordionTab header="Messages">
+
+      <div class="btn">
+        <p-button>teste</p-button>
+      </div>
+
+      <div >
+        message
+      </div>
+        
+    </p-accordionTab>
+</p-accordion> -->
+
+<p-accordion [activeIndex]="0" *ngIf="messageService.getMessages().length">
+  <p-accordionTab header="Messages">
+
+    <div class="btn">
+      <p-button label="Clear All Messages" [outlined]="false"  badge={{messageService.getMessages().length}} [raised]="false" badgeClass="p-badge-danger" severity="warning" [rounded]="false" (click)="messageService.clear()"></p-button>
+    </div>
+
+    <div class="msg" *ngFor="let message of messageService.getMessages()">
+      {{message}}
+    </div>
+      
+  </p-accordionTab>
+</p-accordion>

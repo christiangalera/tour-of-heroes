@@ -1,17 +1,9 @@
-<p-toolbar  [style]="{'background-color': '#1565C0', 'color': 'white', 'padding': '12px', 'padding-left': '20px', 'border': 'none', 'border-radius': '0px'}">
-  <h1>{{ title }}</h1>
-  <ng-template pTemplate="end" pTemplate="end">
-  <p-button routerLink="/heroes" pTooltip="Show your heroes" label="Heroes" tooltipPosition="left" icon="pi pi-star-fill" [raised]="true" [rounded]="true" class="mr-3"></p-button>
-  
-  <p-button routerLink="/dashboard" pTooltip="Show dashboard" label="Dashboard" tooltipPosition="left" icon="pi pi-map"severity="warning" [raised]="true" [rounded]="true" class="mr-4"></p-button>
-
-  
-</ng-template>
-</p-toolbar>
+<app-toolbar [title]="title" [menuItems]="menuItems"></app-toolbar>
 
 <div class="content" fxLayoutGap="12px">
-  <router-outlet></router-outlet >
-  <app-messages></app-messages>  
-</div>
+  <router-outlet></router-outlet>
+
+    <app-messages></app-messages>  
+  </div>
 
  
