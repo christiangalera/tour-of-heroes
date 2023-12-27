@@ -7,8 +7,8 @@ import { HeroesComponent } from './heroes/heroes.component';
 import { FormsModule } from '@angular/forms';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { AppRoutingModule } from './app-routing.module';
-import { DashboardComponent } from './dashboard/dashboard.component';
 import { CoreModule } from './core/core.module';
+import { DashboardModule } from './dashboard/dashboard.module';
 
 
 @NgModule({
@@ -16,12 +16,17 @@ import { CoreModule } from './core/core.module';
     AppComponent,
     HeroesComponent,
     HeroDetailComponent, 
-    DashboardComponent
   ],
   imports: [
+    //  @Angular
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
+
+    // Feature
+    DashboardModule,
+
+    //  App
     AppRoutingModule,
     CoreModule
   ],
