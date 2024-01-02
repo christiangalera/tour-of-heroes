@@ -5,9 +5,10 @@ import { MessagesComponent } from './components/messages/messages.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 
-const COMPONENTS = [MessagesComponent, ToolbarComponent]
+const COMPONENTS = [MessagesComponent, ToolbarComponent, PageNotFoundComponent]
 
 const MODULES = [PrimengModule, FlexLayoutModule, RouterModule]
 
